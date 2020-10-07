@@ -6,4 +6,9 @@ Rails.application.routes.draw do
   get '/resume', to: 'static#resume'
 
   resources :users
+  resources :sessions, only: [:create]
+
+  get '/login', to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
+  get '/signup', to: 'users#new'
 end
