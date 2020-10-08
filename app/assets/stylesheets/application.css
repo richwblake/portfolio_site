@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: darkslategrey;
+}
+
+.nav-header {
+  background-color: #120078;
+  align-items: center;
+  display: flex;
+}
+
+.header-title {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0;
+  display: inline;
+  color: whitesmoke;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.header-links {
+  display: inline;
+}
+
+.header-links * {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: medium;
+  font-family: 'Noto Sans SC', sans-serif;
+  background-color: whitesmoke;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.header-links *:hover {
+  background-color: darkslategray;
+  color: whitesmoke;
+}
+
+.header-links *:active {
+  text-decoration: none;
+}
+
+.body-content {
+  width: 70%;
+  margin: auto;
+}

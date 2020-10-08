@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="nav-header">
+      <%= link_to 'wills.fyi', root_url, class: 'header-title' %>
+      <div class="header-links">
+        <%= link_to 'About me', about_path %>
+        <%= link_to 'Blog', '/' %>
+        <%= link_to 'Resume', resume_path %>
+      </div>
+    </div>
+    <div class="body-content">
+      <%= yield %>
+    </div>
   </body>
 </html>
