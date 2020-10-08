@@ -17,6 +17,14 @@
         <%= link_to 'Blog', '/' %>
         <%= link_to 'Resume', resume_path %>
       </div>
+      <div class="session-links">
+        <% if current_user %>
+          <%= link_to 'Log out', logout_path, method: 'delete' %>
+        <% else %>
+          <%= link_to 'Log in', login_path %>
+          <%= link_to 'Sign up', signup_path %>
+        <% end %>
+      </div>
     </div>
     <div class="body-content">
       <%= yield %>

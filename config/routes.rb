@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   get '/about', to: 'static#about'
   get '/resume', to: 'static#resume'
 
+  get '/login', to: 'sessions#new'
+  delete '/logout', to: 'sessions#destroy'
+  get '/signup', to: 'users#new'
+
   resources :users
   resources :sessions, only: [:create]
-
-  get '/login', to: 'sessions#new'
-  get '/logout', to: 'sessions#destroy'
-  get '/signup', to: 'users#new'
 end

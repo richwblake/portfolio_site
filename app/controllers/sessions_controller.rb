@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :redirect_if_logged_in, only: [:new, :create]
+
   def new
   end
 
@@ -8,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url, notice: "Logged in"
     else
-      redirect_to new_session_path, notice: "Authentication failed, please try again"
+      redirect_to login_path, notice: "Authentication failed, please try again"
     end
   end
 
