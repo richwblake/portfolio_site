@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :redirect_if_logged_in
+  before_action :redirect_if_logged_in, only: [:new, :create]
 
   def show
   end
