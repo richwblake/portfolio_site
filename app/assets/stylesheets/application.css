@@ -39,6 +39,7 @@ html, body {
 }
 
 .header-links {
+  align-items: center;
   display: inline;
 }
 
@@ -52,7 +53,28 @@ html, body {
   border-radius: 5px;
 }
 
+.session-links {
+  align-self: center;
+  display: inline;
+}
+
+
+.session-links * {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: medium;
+  font-family: 'Noto Sans SC', sans-serif;
+  background-color: whitesmoke;
+  margin: 5px;
+  border-radius: 5px;
+}
+
 .header-links *:hover {
+  background-color: darkslategray;
+  color: whitesmoke;
+}
+
+.session-links *:hover {
   background-color: darkslategray;
   color: whitesmoke;
 }
