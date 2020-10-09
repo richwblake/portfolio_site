@@ -84,6 +84,12 @@ html, body {
   text-decoration: none;
 }
 
+.header-name {
+  padding: 5px 10px;
+  color: whitesmoke;
+  font-size: medium;
+}
+
 .body-content {
   width: 70%;
   margin: auto;
