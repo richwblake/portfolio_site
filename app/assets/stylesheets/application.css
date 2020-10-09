@@ -20,6 +20,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: darkslategrey;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 .nav-header {
