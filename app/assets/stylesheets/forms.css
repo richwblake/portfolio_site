@@ -1,0 +1,40 @@
+.form-header {
+  color: whitesmoke;
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form {
+  margin: auto;
+  width: 50%;
+}
+
+.form-label {
+  color: whitesmoke;
+  font-size: xx-large;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  display: block;
+  margin: auto;
+  width: 60%;
+  size: 2em;
+  padding: 5px;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submit-btn > input {
+  font-size: 20px;
+  padding: 5px 10px;
+
+}

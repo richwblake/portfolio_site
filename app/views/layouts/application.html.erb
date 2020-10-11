@@ -33,13 +33,14 @@
       </div>
       <div class="header-name">
         <% if current_user %>
-          <p>Logged in as <%= current_user.name_with_role %></p>
+          <p><%= current_user.name_with_role %></p>
         <% end %>
       </div>
     </div>
   </div>
     <div class="body-content">
       <p id='notice'><%= notice %></p>
+      <p id='alert'><%= alert %></p>
       <%= yield %>
     </div>
   </body>

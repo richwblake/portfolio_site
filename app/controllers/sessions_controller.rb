@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url, notice: "Logged in"
     else
-      redirect_to login_path, notice: "Authentication failed, please try again"
+      redirect_to login_path, alert: "Authentication failed, please try again"
     end
   end
 
