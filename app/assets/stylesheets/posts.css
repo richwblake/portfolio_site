@@ -1,0 +1,30 @@
+#blog-page-title {
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 5%;
+}
+
+.blog-post-link {
+  text-decoration: none;
+}
+
+.blog-post {
+  border: solid whitesmoke 1px;
+  background-color: #474747;
+  border-radius: 15px;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 5%;
+}
+
+.post-title {
+  color: whitesmoke;
+}
+
+.post-title:visited {
+  color: whitesmoke;
+}
+
+.post-summary {
+  color: whitesmoke;
+}
