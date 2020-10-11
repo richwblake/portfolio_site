@@ -24,12 +24,16 @@ html, body {
 }
 
 #notice {
+  background-color: #120078;
+  display: inline;
   color: green;
   font-size: large;
   text-align: center;
 }
 
 #alert {
+  background-color: #120078;
+  display: inline;
   color: red;
   font-size: large;
   text-align: center;
@@ -101,9 +105,10 @@ html, body {
 }
 
 .header-name {
-  padding: 5px 10px;
+  padding: 5px 20px 5px 20px;
   color: whitesmoke;
-  font-size: medium;
+  font-size: large;
+  white-space: nowrap;
 }
 
 .body-content {

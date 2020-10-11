@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to root_url, notice: "Logged in"
+      redirect_to root_url, notice: "Succesfully logged in"
     else
       redirect_to login_path, alert: "Authentication failed, please try again"
     end
@@ -16,6 +16,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_url
+    redirect_to root_url, notice: "Successfully logged out, it's safe to close the window"
   end
 end

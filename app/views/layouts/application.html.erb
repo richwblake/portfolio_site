@@ -18,6 +18,12 @@
           <%= link_to 'About me', about_path %>
           <%= link_to 'Blog', posts_path %>
           <%= link_to 'Resume', resume_path %>
+          <% if notice %>
+            <p id='notice'><%= notice %></p>
+          <% end %>
+          <% if alert %>
+            <p id='alert'><%= alert %></p>
+          <% end %>
         </div>
         <div class="session-links">
           <% if current_user %>
@@ -33,14 +39,12 @@
       </div>
       <div class="header-name">
         <% if current_user %>
-          <p><%= current_user.name_with_role %></p>
+          <p><%= current_user.name_with_role_if_admin %></p>
         <% end %>
       </div>
     </div>
   </div>
     <div class="body-content">
-      <p id='notice'><%= notice %></p>
-      <p id='alert'><%= alert %></p>
       <%= yield %>
     </div>
   </body>

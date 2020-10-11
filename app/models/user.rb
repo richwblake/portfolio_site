@@ -6,7 +6,11 @@ class User < ApplicationRecord
 
   enum role: [:user, :admin]
 
-  def name_with_role
-    "#{self.name} (#{self.role})"
+  def name_with_role_if_admin
+    if self.admin?
+      "#{self.name} (admin)"
+    else
+      self.name
+    end
   end
 end
