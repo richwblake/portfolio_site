@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <div class="nav-header-container">
     <div class="nav-header">
       <%= link_to 'wills.fyi', root_url, class: 'header-title' %>
       <div class="links">
@@ -20,6 +21,9 @@
         </div>
         <div class="session-links">
           <% if current_user %>
+            <% if current_user.admin? %>
+              <%= link_to 'New Post', new_post_path %>
+            <% end %>
             <%= link_to 'Log out', logout_path, method: 'delete' %>
           <% else %>
             <%= link_to 'Log in', login_path %>
@@ -33,6 +37,7 @@
         <% end %>
       </div>
     </div>
+  </div>
     <div class="body-content">
       <p id='notice'><%= notice %></p>
       <%= yield %>

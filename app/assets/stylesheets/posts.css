@@ -1,7 +1,6 @@
 #blog-page-title {
   color: whitesmoke;
   text-align: center;
-  text-decoration: underline;
   padding-bottom: 5%;
 }
 
@@ -27,4 +26,21 @@
 
 .post-summary {
   color: whitesmoke;
+}
+
+.post-show {
+  width: 80%;
+  margin: auto;
+  margin-top: 7%;
+}
+
+.post-show > h1 {
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.post-content > p {
+  color: whitesmoke;
+  font-size: larger;
+  line-height: 1.7em;
 }

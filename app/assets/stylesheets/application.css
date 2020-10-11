@@ -23,6 +23,12 @@ html, body {
   font-family: 'Noto Sans SC', sans-serif;
 }
 
+.nav-header-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .nav-header {
   background-color: #120078;
   align-items: center;
@@ -93,4 +99,5 @@ html, body {
 .body-content {
   width: 70%;
   margin: auto;
+  margin-top: 7%;
 }
