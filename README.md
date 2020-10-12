@@ -1,24 +1,5 @@
-# README
+# wills.fyi
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Built with Ruby on Rails & Postgres
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This applcation is a personal portfolio site for my career milestones and technical projects. It was built with the Ruby on Rails framework, along with a Postgresql database. The site is hosted on a Virtual Private Server on Digital Ocean. The site is served using the nginx configured as a reverse proxy, with the request-response cycle handled by Passenger/Capistrano.
