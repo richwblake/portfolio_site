@@ -13,6 +13,14 @@ class ApplicationController < ActionController::Base
     current_user ? true : false
   end
 
+  def sign_in(user)
+    session[:user_id] = user.id
+  end
+
+  def sign_out
+    session[:user_id] = nil
+  end
+
   def redirect_if_logged_in
     if current_user
       redirect_to root_url
