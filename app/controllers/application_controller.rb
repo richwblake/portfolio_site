@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   def redirect_if_not_logged_in
     if !current_user
-      redirect_to posts_path
+      redirect_to login_path, alert: 'Please log in to continue'
     end
   end
 
