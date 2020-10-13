@@ -4,6 +4,7 @@
   <%= link_to post_path(post), class: 'blog-post-link' do %>
     <div class="blog-post">
       <h2 class="post-title"><%= post.title %></h2>
+      <p class="published-date">Published on <%= post.get_formatted_date_and_time %></p>
       <p class="post-summary"><%= post.summary %></p>
     </div>
   <% end %>

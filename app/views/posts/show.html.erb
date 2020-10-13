@@ -1,5 +1,7 @@
 <div class="post-show">
-  <h1 class="post-title"><%= @post.title %></h2>
+  <h1 class="show-post-title"><%= @post.title %></h2>
+  <h4 class="show-post-summary"><%= @post.summary %></h4>
+  <hr>
   <div class="post-content"><%= simple_format(@post.content, class: 'content-paragraph') %></div>
 
   <div class="comments">

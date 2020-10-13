@@ -17,8 +17,24 @@
   margin-bottom: 5%;
 }
 
+.published-date {
+  color: whitesmoke;
+  float: right;
+}
+
 .post-title {
   color: whitesmoke;
+  float: left;
+}
+
+.show-post-title {
+  color: whitesmoke;
+}
+
+.show-post-summary {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 5%;
 }
 
 .post-title:visited {
@@ -27,6 +43,8 @@
 
 .post-summary {
   color: whitesmoke;
+  display: block;
+  margin-top: 90px;
 }
 
 .post-show {
@@ -38,7 +56,6 @@
 .post-show > h1 {
   font-size: 50px;
   text-align: center;
-  margin-bottom: 7%;
 }
 
 .post-content > p {
