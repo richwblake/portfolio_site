@@ -1,0 +1,11 @@
+#about-me-header {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 70px;
+}
+
+.about-me-content > h2 {
+  color: whitesmoke;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
