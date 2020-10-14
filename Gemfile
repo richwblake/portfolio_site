@@ -23,6 +23,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 # Use Pundit to control permissions when creating blog posts
 gem 'pundit'
+# Capistrano for deploying on VPS
+gem 'capistrano', '~> 3.11'
+gem 'capistrano-rails', '~> 1.4'
+gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
