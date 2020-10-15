@@ -76,6 +76,7 @@ html, body {
 }
 
 .header-links * {
+  color: #1f1f1f;
   padding: 5px 10px;
   text-decoration: none;
   font-size: large;
@@ -91,6 +92,7 @@ html, body {
 }
 
 .session-links * {
+  color: #1f1f1f;
   padding: 5px 10px;
   text-decoration: none;
   font-size: large;
