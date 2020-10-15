@@ -26,6 +26,8 @@
   padding: 5px;
   font-size: larger;
   border-radius: 5px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 12pt;
 }
 
 .submit-btn {

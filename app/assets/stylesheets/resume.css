@@ -1,0 +1,10 @@
+#resume-title {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 5vh;
+}
+
+#pdf-iframe {
+  display: block;
+  margin: auto;
+}

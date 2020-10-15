@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'static#home'
   get '/about', to: 'static#about'
   get '/resume', to: 'static#resume'
+  get '/resume/download', to: 'static#download'
 
   get '/login', to: 'sessions#new'
   delete '/logout', to: 'sessions#destroy'
