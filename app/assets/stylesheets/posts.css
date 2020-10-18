@@ -72,6 +72,14 @@
   margin-bottom: 30px;
 }
 
+.comments > h1 {
+  padding-bottom: 20px;
+}
+
+.comments > p {
+  margin-bottom: 50px;
+}
+
 .new-comment-form {
   margin-top: 30px;
 }
